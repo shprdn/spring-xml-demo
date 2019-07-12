@@ -25,7 +25,7 @@
         <constructor-arg name="gender" value="Male"/>
         <constructor-arg name="age" value="28" />
     </bean>
-    <bean id="bean" class="com.stackroute.domain.BeanLifeCycleDemoBean"></bean>
+    <bean id="bean" class="com.stackroute.domain.BeanLifeCycleDemoBean" init-method="customInit" destroy-method="customDestroy"></bean>
 
 
 </beans>

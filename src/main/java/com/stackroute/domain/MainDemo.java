@@ -11,6 +11,7 @@ public class MainDemo {
         ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
         //creating BeanLifeCycleDemoBean object
         BeanLifeCycleDemoBean beanLifeCycleDemoBean = context.getBean("bean",BeanLifeCycleDemoBean.class);
+        //calling methods
         //close down the application context
         context.registerShutdownHook();
 
