@@ -2,43 +2,30 @@
 
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
 
 
+    <bean id="movie" class="com.stackroute.domain.Movie" autowire="byName">
+    </bean>
+    <bean id="movie1" class="com.stackroute.domain.Movie" autowire="constructor"/>
     <!-- Entering the first actor object values-->
-    <bean id="actor1" class="com.stackroute.domain.Actor">
-        <constructor-arg name="name" value="ShahRukh Khan" type="java.lang.String"/>
-        <constructor-arg name="gender" value="Male" type="java.lang.String"/>
-        <constructor-arg name="age" value="53" type="int"/>
+    <bean id="actor" class="com.stackroute.domain.Actor">
+        <constructor-arg name="name" value="ShahRukh Khan"/>
+        <constructor-arg name="gender" value="Male"/>
+        <constructor-arg name="age" value="53" />
     </bean>
-
-    <!-- Entering the second actor object values-->
     <bean id="actor2" class="com.stackroute.domain.Actor">
-        <constructor-arg name="name" value="Kartik Aaryan" type="java.lang.String"/>
-        <constructor-arg name="gender" value="Male" type="java.lang.String"/>
-        <constructor-arg name="age" value="28" type="int"/>
+        <constructor-arg name="name" value="Kartik Aaryan"/>
+        <constructor-arg name="gender" value="Male"/>
+        <constructor-arg name="age" value="28" />
     </bean>
 
-    <!-- Entering the third actor object values-->
-    <bean id="actor3" class="com.stackroute.domain.Actor">
-        <constructor-arg name="name" value="Deepika Padukone" type="java.lang.String"/>
-        <constructor-arg name="gender" value="Female" type="java.lang.String"/>
-        <constructor-arg name="age" value="32" type="int"/>
-    </bean>
-
-
-    <bean id="movie1" class="com.stackroute.domain.Movie" scope="prototype">
-        <constructor-arg name="actor1" ref="actor1"/>
-        <constructor-arg name="actor2" ref="actor2"/>
-        <constructor-arg name="actor3" ref="actor3"/>
-    </bean>
-
-    <bean name="movieA,movieB" class="com.stackroute.domain.Movie">
-        <constructor-arg name="actor1" ref="actor1"/>
-        <constructor-arg name="actor2" ref="actor2"/>
-        <constructor-arg name="actor3" ref="actor3"/>
-    </bean>
 
 
 </beans>
