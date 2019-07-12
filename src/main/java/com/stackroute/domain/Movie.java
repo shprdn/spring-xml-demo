@@ -16,7 +16,7 @@ public class Movie implements ApplicationContextAware, BeanNameAware, BeanFactor
     //creating actor class objects
     private Actor actor;
     private ApplicationContext context=null;
-    private BeanFactoryAware bean;
+    private BeanFactory bean;
 
 
     //default constructor
@@ -48,7 +48,7 @@ public class Movie implements ApplicationContextAware, BeanNameAware, BeanFactor
 
     @Override
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-        this.bean=bean;
+        this.bean=beanFactory;
         System.out.println("BeanFactory implemented");
     }
 }

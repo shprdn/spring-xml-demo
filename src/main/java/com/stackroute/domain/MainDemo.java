@@ -17,3 +17,15 @@ public class MainDemo {
 
     }
 }
+
+//OUTPUT
+//ul 12, 2019 11:50:47 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+//        INFO: Loading XML bean definitions from class path resource [beans.xml]
+//        This is postProcessBeforeInitialization......
+//        afterPropertiesSet()
+//        Hey! I am initializing......
+//        This is postProcessAfterInitialization.......
+//        Jul 12, 2019 11:50:47 AM org.springframework.context.support.ClassPathXmlApplicationContext doClose
+//        INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@64bf3bbf: startup date [Fri Jul 12 11:50:46 IST 2019]; root of context hierarchy
+//        Destroy()
+//        OKay! Bye...

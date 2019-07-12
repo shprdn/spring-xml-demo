@@ -11,21 +11,22 @@
     <context:annotation-config/>
 
 
-    <bean id="movie" class="com.stackroute.domain.Movie" autowire="byName">
-    </bean>
-    <bean id="movie1" class="com.stackroute.domain.Movie" autowire="constructor"/>
-    <!-- Entering the first actor object values-->
-    <bean id="actor" class="com.stackroute.domain.Actor">
-        <constructor-arg name="name" value="ShahRukh Khan"/>
-        <constructor-arg name="gender" value="Male"/>
-        <constructor-arg name="age" value="53" />
-    </bean>
-    <bean id="actor2" class="com.stackroute.domain.Actor">
-        <constructor-arg name="name" value="Kartik Aaryan"/>
-        <constructor-arg name="gender" value="Male"/>
-        <constructor-arg name="age" value="28" />
-    </bean>
-    <bean id="bean" class="com.stackroute.domain.BeanLifeCycleDemoBean" init-method="customInit" destroy-method="customDestroy"></bean>
+<!--    <bean id="movie" class="com.stackroute.domain.Movie" autowire="byName">-->
+<!--    </bean>-->
+<!--    <bean id="movie1" class="com.stackroute.domain.Movie" autowire="constructor"/>-->
+<!--    &lt;!&ndash; Entering the first actor object values&ndash;&gt;-->
+<!--    <bean id="actor" class="com.stackroute.domain.Actor">-->
+<!--        <constructor-arg name="name" value="ShahRukh Khan"/>-->
+<!--        <constructor-arg name="gender" value="Male"/>-->
+<!--        <constructor-arg name="age" value="53" />-->
+<!--    </bean>-->
+<!--    <bean id="actor2" class="com.stackroute.domain.Actor">-->
+<!--        <constructor-arg name="name" value="Kartik Aaryan"/>-->
+<!--        <constructor-arg name="gender" value="Male"/>-->
+<!--        <constructor-arg name="age" value="28" />-->
+<!--    </bean>-->
+    <bean id="bean" class="com.stackroute.domain.BeanLifeCycleDemoBean" init-method="customInit" destroy-method="customDestroy"/>
+    <bean id="bean2" class="com.stackroute.domain.BeanPostProcessorDemoBean"></bean>
 
 
 </beans>
