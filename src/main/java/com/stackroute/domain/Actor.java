@@ -1,11 +1,13 @@
 package com.stackroute.domain;
 
 public class Actor {
+    //data variables
     private String name;
     private String gender;
     private int age;
+    //default constructor
     public Actor(){};
-
+   //setters and getters
     public String getName() {
         return name;
     }
@@ -23,7 +25,7 @@ public class Actor {
         this.gender = gender;
         this.age = age;
     }
-
+    //toString method
     @Override
     public String toString() {
         return "Actor{" +
