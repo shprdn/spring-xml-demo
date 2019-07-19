@@ -8,7 +8,7 @@ public class Actor {
     //default constructor
     public Actor(){};
    //setters and getters
-    public String getName() {
+    public String getName() { 
         return name;
     }
 
