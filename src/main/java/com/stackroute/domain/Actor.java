@@ -5,7 +5,7 @@ public class Actor {
     private String name;
     private String gender;
     private int age;
-    public Actor(){};
+    public Actor(){}; 
    //getters
     public String getName() {
         return name;
