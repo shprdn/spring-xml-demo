@@ -10,7 +10,7 @@ public class Actor {
    //setters and getters
     public String getName() {
         return name;
-    }
+    } 
 
     public String getGender() {
         return gender;
