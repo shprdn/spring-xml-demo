@@ -6,7 +6,7 @@ public class Actor {
     private String gender;
     private int age;
     //default constructor
-    public Actor(){};
+    public Actor(){}; 
     //getters
     public String getName() {
         return name;
