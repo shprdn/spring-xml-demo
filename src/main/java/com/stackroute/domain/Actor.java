@@ -8,7 +8,7 @@ public class Actor {
     public Actor(){};
    //getters
     public String getName() {
-        return name;
+        return name; 
     }
 
     public String getGender() {
