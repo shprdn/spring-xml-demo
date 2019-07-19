@@ -5,7 +5,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-
+ 
     <!-- Entering the first actor object values-->
     <bean id="actor1" class="com.stackroute.domain.Actor">
         <constructor-arg name="name" value="ShahRukh Khan" type="java.lang.String"/>
